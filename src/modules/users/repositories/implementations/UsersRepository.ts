@@ -40,7 +40,6 @@ class UsersRepository implements IUsersRepository {
     const userEmail = this.users.find((user) => user.email === email);
 
     return userEmail;
-    
   }
 
   turnAdmin(receivedUser: User): User {
@@ -53,7 +52,7 @@ class UsersRepository implements IUsersRepository {
 
   list(): User[] {
     return this.users;
-    
+  }
 }
 
 export { UsersRepository };
